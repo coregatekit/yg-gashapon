@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>– กล่องของขวัญที่น่าสงสัยของเฒ่าพยากรณ์ –</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <!--
+      Need a visual blank slate?
+      Remove all code in `styles.css`!
+    -->
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="script.js"></script>
+  </head>
+  <body>
+    <h1>– กล่องของขวัญที่น่าสงสัยของเฒ่าพยากรณ์ –</h1>
+
+    <div>
+      <label for="number_random"
+        >จำนวนครั้งที่ต้องการสุ่ม (ไม่เกิน 100 ครั้ง)</label
+      >
+      <input
+        type="number"
+        name="number_random"
+        id="number_random"
+        style="width: 50px"
+      />
+    </div>
+    <div>
+      <label for="character_class">เลือกคลาสของตัวละคร</label>
+      <select name="character_class" id="character_class">
+        <option value="asc1">คลาสเซียน 1</option>
+        <option value="asc2">คลาสเซียน 2</option>
+        <option value="asc3">คลาสเซียน 3</option>
+      </select>
+    </div>
+
+    <button id="randomBtn">สุ่มเลย!</button>
+    <button id="resetBtn">Reset</button>
+    <div id="reward"></div>
+  </body>
+</html>
